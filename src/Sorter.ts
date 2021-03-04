@@ -7,7 +7,7 @@ export interface Sortable {
 export class Sorter {
     constructor(public collection: Sortable) {}
 
-    sort(): void {
+    sort(): Sorter {
         const { length } = this.collection;
 
         for (let i = 0; i < length; i++) {
@@ -17,5 +17,7 @@ export class Sorter {
                 }
             }
         }
+
+        return this;
     }
 }

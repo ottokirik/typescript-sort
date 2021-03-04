@@ -14,6 +14,7 @@ var Sorter = /** @class */ (function () {
                 }
             }
         }
+        return this;
     };
     return Sorter;
 }());
