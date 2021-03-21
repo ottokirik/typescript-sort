@@ -1,19 +1,12 @@
 import { NumbersCollection } from './NumbersCollection';
 import { CharactersCollection } from './CharactersCollection';
-import { Sorter } from './Sorter'
 import { LinkedList } from './LinkedList';
 
-/* const sorter_number = new Sorter(new NumbersCollection([19, -5, 0, 5, 10, -20]));
-console.log(sorter.sort().collection);
+const numberCollection = new NumbersCollection([2, -10, 0, 50, -20]);
+numberCollection.sort().print();
 
-const sorter_characters = new Sorter(new CharactersCollection('XaaaPoBaXB'));
-console.log(sorter_characters.sort().collection); */
+const characters = new CharactersCollection('AbpPAaaXXb');
+characters.sort().print();
 
 const list = new LinkedList();
-
-list.add(8).add(-3).add(15).add(0);
-
-const sorter_list = new Sorter(list);
-console.log(sorter_list.sort().collection);
-
-list.print();
+list.add(8).add(-3).add(15).add(0).sort().print();
